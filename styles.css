@@ -19,6 +19,7 @@ body {
     font-weight: 400;
     font-size: 15px;
     color: var(--neutral-clr-very-Dark-Blue);
+    background-color: var(--neutral-clr-Very-Light-Gray);
 }
 
 
@@ -47,6 +48,7 @@ header {
     height: 250px;
     border-radius: 10px;
     box-shadow: 0 2px 6px var(--neutral-clr-Grayish-Blue);
+    background-color: white;
    
 }
 
