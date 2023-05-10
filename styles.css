@@ -1,0 +1,181 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+:root {
+--primary-clr-Red: hsl(0, 78%, 62%);
+--primary-clr-Cyan: hsl(180, 62%, 55%);
+--primary-clr-Orange: hsl(34, 97%, 64%);
+--primary-clr-Blue: hsl(212, 86%, 64%);
+--neutral-clr-very-Dark-Blue: hsl(234, 12%, 34%);
+--neutral-clr-Grayish-Blue: hsl(229, 6%, 66%);
+--neutral-clr-Very-Light-Gray: hsl(0, 0%, 98%);
+
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    color: var(--neutral-clr-very-Dark-Blue);
+}
+
+
+
+/*--------header-------*/
+
+header {
+    text-align: center;
+}
+.red {
+    font-weight: 200;
+    letter-spacing: 0.5px;
+}
+
+.header-text {
+   max-width: 500px;
+   margin: 0 auto;
+   color: var(--neutral-clr-Grayish-Blue);
+}
+
+/*--------cards-------*/
+
+.card {
+   
+    width: 350px;
+    height: 250px;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px var(--neutral-clr-Grayish-Blue);
+   
+}
+
+.main-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.supervisor, .calculator {
+    position: relative;
+    top: 150px;
+
+}
+
+.karma {
+    position: relative;
+    bottom: 100px;
+}
+
+.supervisor {
+    margin-right: 40px;
+}
+
+.calculator {
+    margin-left: 40px;
+}
+
+/*--------cards contents-------*/
+
+.line {
+    width: 350px;
+    height: 8px;
+    border-radius: 10px 10px 0 0;
+}
+
+.cyan-line {
+    background-color: var(--primary-clr-Cyan);
+}
+
+.red-line {
+    background-color: var(--primary-clr-Red);
+}
+
+.blue-line {
+    background-color: var(--primary-clr-Blue);
+}
+
+.orange-line {
+    background-color: var(--primary-clr-Orange);
+}
+
+.title, .paragraph {
+    margin-left: 30px;
+}
+
+.paragraph {
+    color: var(--neutral-clr-Grayish-Blue);
+}
+
+.icon {
+    position: absolute;
+    right: 30px;
+    margin-top: 20px;
+}
+
+.team-builder-icon {
+    position: relative;
+    left: 254px;
+}
+
+
+/*--------mobile view-------*/
+
+@media screen and (max-width: 769px) {
+    .header-text {
+        max-width: 350px;
+        margin-bottom: 50px;
+    }
+
+    .main-div {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        position: relative;
+
+    }
+
+
+  .supervisor {
+    left: 20px;
+    margin-bottom: 70px;
+    margin-top: 100px;
+  }
+
+  .calculator {
+    top: 380px;
+    right: 20px;
+    margin-bottom: 70px;
+  }
+
+  .team-builder {
+    position: relative;
+    top: 100px;
+  }
+
+  .karma {
+    position: relative;
+    bottom: 190px;
+    margin-bottom: 70px;
+
+    
+  }
+
+
+  .icon {
+    position: relative;
+    left: 250px;
+    margin-top: 10px;
+    padding: 10px 0;
+  }
+
+  .attribution {
+    position: relative;
+    top: 240px;
+  }
+
+
+
+}
